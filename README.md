@@ -32,22 +32,22 @@
 
 <h3>Capturas de pantalla de la aplicación</h3>
 
-![Pantalla 1](app/screenshots/lakarta_01.png)
-![Pantalla 2](app/screenshots/lakarta_02.png)
-![Pantalla 3](app/screenshots/lakarta_03.png)
-![Pantalla 4](app/screenshots/lakarta_04.png)
-![Pantalla 5](app/screenshots/lakarta_05.png)
-![Pantalla 6](app/screenshots/lakarta_06.png)
-![Pantalla 7](app/screenshots/lakarta_07.png)
-![Pantalla 8](app/screenshots/lakarta_08.png)
-![Pantalla 9](app/screenshots/lakarta_09.png)
-![Pantalla 10](app/screenshots/lakarta_10.png)
-![Pantalla 11](app/screenshots/lakarta_11.png)
-![Pantalla 12](app/screenshots/lakarta_12.png)
-![Pantalla 13](app/screenshots/lakarta_13.png)
-![Pantalla 14](app/screenshots/lakarta_14.png)
-![Pantalla 15](app/screenshots/lakarta_15.png)
-![Pantalla 16](app/screenshots/lakarta_16.png)
+![Pantalla 1](app/screenshots/lakarta_01.jpg)
+![Pantalla 2](app/screenshots/lakarta_02.jpg)
+![Pantalla 3](app/screenshots/lakarta_03.jpg)
+![Pantalla 4](app/screenshots/lakarta_04.jpg)
+![Pantalla 5](app/screenshots/lakarta_05.jpg)
+![Pantalla 6](app/screenshots/lakarta_06.jpg)
+![Pantalla 7](app/screenshots/lakarta_07.jpg)
+![Pantalla 8](app/screenshots/lakarta_08.jpg)
+![Pantalla 9](app/screenshots/lakarta_09.jpg)
+![Pantalla 10](app/screenshots/lakarta_10.jpg)
+![Pantalla 11](app/screenshots/lakarta_11.jpg)
+![Pantalla 12](app/screenshots/lakarta_12.jpg)
+![Pantalla 13](app/screenshots/lakarta_13.jpg)
+![Pantalla 14](app/screenshots/lakarta_14.jpg)
+![Pantalla 15](app/screenshots/lakarta_15.jpg)
+![Pantalla 16](app/screenshots/lakarta_16.jpg)
 
 <h3>Autoría</h3>
 <p><b>Creado por: </b>Sergio Salgado</p>

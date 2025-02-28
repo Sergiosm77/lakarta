@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item
+        android:id="@+id/buscar"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Buscar"
+        />
+
+    <item
+        android:id="@+id/grupo_login_usuario"
+        app:itemTextAppearance="@style/texto_normal"
+        android:title="Usuario"
+
+        >
+
+        <menu>
+
+
+            <item
+                android:id="@+id/login_usuario"
+                android:icon="@drawable/icon_login"
+                android:title="@string/boton_login_usuario"
+                />
+
+            <item
+                android:id="@+id/config_usuario"
+                android:icon="@drawable/icon_config"
+                android:title="@string/boton_config_usuario"
+                />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/grupo_login_empresa"
+        android:title="Empresa"
+
+        >
+
+        <menu>
+
+
+            <item
+                android:id="@+id/login_empresa"
+                android:icon="@drawable/icon_login"
+                android:title="@string/boton_login_empresa"
+                />
+
+            <item
+                android:id="@+id/config_empresa"
+                android:icon="@drawable/icon_config"
+                android:title="@string/boton_config_empresa"
+                />
+
+        </menu>
+
+    </item>
+
+    <group android:id="@+id/caja_favoritos">
+        <item
+            android:id="@+id/mis_favoritos"
+            android:icon="@drawable/icon_favs"
+            android:title="@string/mis_favoritos"
+            />
+    </group>
+
+
+    <group android:id="@+id/caja_politica">
+    <item
+        android:id="@+id/politica"
+        android:icon="@drawable/icon_privacidad"
+        android:title="@string/politica_privacidad"
+        />
+    </group>
+
+    <group android:id="@+id/caja_compartir">
+    <item
+        android:id="@+id/compartir"
+        android:icon="@drawable/icon_share"
+        android:title="@string/compartir"
+        />
+    </group>
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="centerCrop"
+            android:elevation="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/publi_foto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/pizarra" />
+
+        <TextView
+            android:id="@+id/texto1"
+            style="@style/texto_grande_negrita"
+            android:textColor="@color/colorBlanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+        <TextView
+            android:id="@+id/texto2"
+            style="@style/texto_grande_negrita"
+            android:textColor="@color/colorBlanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/texto1"/>
+
+        <TextView
+            android:id="@+id/pregunta"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorRosa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp"
+            android:gravity="center"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/texto2"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

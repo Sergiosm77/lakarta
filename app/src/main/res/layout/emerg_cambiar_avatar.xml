@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding2"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorBlanco"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:background="@color/colorRosa1"
+                android:textColor="@color/colorBlanco"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:text="@string/cambia_avatar"/>
+
+            <LinearLayout
+                android:id="@+id/fondo_avatares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fondo_avatar_chico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="@dimen/_40sdp">
+
+                    <ImageView
+                        android:id="@+id/chico"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/boy" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fondo_avatar_chica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="@dimen/_40sdp">
+
+                    <ImageView
+                        android:id="@+id/chica"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/girl" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRosa1"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/confirmar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlanco"
+                    android:textStyle="bold"
+                    android:text="@string/guardar"/>
+
+                <TextView
+                    android:id="@+id/cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlanco"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Cancelar"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

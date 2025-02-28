@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="sarao.digital.lakarta">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="sarao.digital.lakarta.Info_Publicidad"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="sarao.digital.lakarta.Crear_PDF"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="sarao.digital.lakarta.Cambia_Password"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="sarao.digital.lakarta.politica_privacidad"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="sarao.digital.lakarta.Configura_Usuarios"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Edita_Nivel1"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Edita_Nivel2"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Registra_Empresa"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Registra_Usuario"
+            tools:ignore="Instantiatable">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Inicio"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Contenedor_Lakarta"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Login_Empresa"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Login_Usuario"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Menu_Empresa"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Menu_Usuario"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Info_Restaurante"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Edita_Nivel3"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.Personaliza_Colores"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="sarao.digital.lakarta.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+
+
+</manifest>

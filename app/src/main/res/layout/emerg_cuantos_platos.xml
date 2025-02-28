@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding2"
+        app:cardCornerRadius="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contenedor_foto_plato"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/vacio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/altura_imagen_plato"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/emerg_imagen_plato"
+                app:layout_constraintStart_toStartOf="@+id/emerg_imagen_plato"
+                app:layout_constraintTop_toBottomOf="@+id/ficha_nombre">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ficha_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGris"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/nombre_precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/emerg_nombre_plato"
+                        style="@style/texto_negrita"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        android:padding="5dp"
+                        android:text="plato"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="@dimen/texto_negrita" />
+
+                    <TextView
+                        android:id="@+id/emerg_precio_plato"
+                        style="@style/texto_negrita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:padding="5dp"
+                        android:text="0€"
+                        android:textColor="@color/colorRosa2"
+                        android:textSize="@dimen/texto_negrita">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/alerta_alergeno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_red_900"
+                android:padding="@dimen/_5sdp"
+                android:elevation="@dimen/padding0"
+                android:text="@string/eres_alergico"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="@dimen/texto_normal"
+                app:layout_constraintTop_toBottomOf="@+id/ficha_nombre" />
+
+            <LinearLayout
+                android:id="@+id/contenedor_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                android:background="@color/colorDegradado"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ficha_nombre"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <TextView
+                    android:id="@+id/emerg_detalle_plato"
+                    style="@style/texto_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="3"
+                    android:minLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:scrollbars="vertical"
+                    android:text="fsd fsdfsdf hdfjh sdjkhdsjf jdfh jksdhfjk sdhfjk hdsfjhsd jfhjdsfh jsdfh jfh ds"
+                    android:textColor="@color/colorBlanco" />
+
+                <ImageView
+                    android:id="@+id/ver_mas"
+                    android:layout_width="@dimen/padding3"
+                    android:layout_height="@dimen/padding3"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0"
+                    android:rotation="180"
+                    app:tint="#FFFFFF"
+                    app:srcCompat="@drawable/up_down" />
+
+
+            </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/emerg_imagen_plato"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ficha_nombre">
+
+                </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlanco"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout16">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/contenedor_alergenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding0">
+
+
+            </GridLayout>
+
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding0">
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/espacio_precio"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="x "
+                    android:textSize="@dimen/texto_grande" />
+
+                <TextView
+                    android:id="@+id/emerg_cantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="@dimen/_30sdp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/emerg_precio_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/total"
+                android:textSize="@dimen/_11sdp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/plato_menos"
+            android:layout_width="@dimen/circulo_boton_edit"
+            android:layout_height="@dimen/circulo_boton_edit"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/menos" />
+
+        <ImageView
+            android:id="@+id/plato_mas"
+            android:layout_width="@dimen/circulo_boton_edit"
+            android:layout_height="@dimen/circulo_boton_edit"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mas" />
+
+        <ImageView
+            android:id="@+id/elimina_plato"
+            android:layout_width="@dimen/circulo_boton_edit"
+            android:layout_height="@dimen/circulo_boton_edit"
+            android:layout_weight="1"
+            android:elevation="5dp"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/delete" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancela_plato"
+            style="@style/texto_botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/cancelar"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/acepta_plato"
+            style="@style/texto_botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:padding="10dp"
+            android:text="@string/aceptar"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

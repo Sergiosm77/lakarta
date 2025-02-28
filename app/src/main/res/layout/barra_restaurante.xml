@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/barra_publicidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/barra_restaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding2"
+        android:foreground="?selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding0"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contenedor_cardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding0"
+                app:cardCornerRadius="@dimen/icono_redondo2_radio">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/icono_redondo2"
+                    android:layout_height="@dimen/icono_redondo2"
+
+                    android:background="?selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@drawable/categoria_icono" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/padding0"
+                android:layout_marginEnd="@dimen/padding0"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombre_restaurante"
+                style="@style/texto_grande_negrita"
+                android:textColor="@color/colorNegro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:text="nombre"/>
+
+
+            <TextView
+                android:id="@+id/distancia_restaurante"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorVerde"
+                />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detalle_restaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding2"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:minLines="2"
+            android:text="detalles"
+            android:textSize="@dimen/_11sdp" />
+
+
+            <ImageView
+                android:id="@+id/logo_foto1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/altura_imagen_restaurante"
+                android:focusable="auto"
+                android:scaleType="centerCrop"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                app:srcCompat="@drawable/categoria_icono" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/barra_iconos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding0"
+            android:layout_marginTop="@dimen/padding0"
+            android:layout_marginBottom="@dimen/padding0"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/icono_favorito"
+                android:layout_width="@dimen/icono_boton_peq"
+                android:layout_height="@dimen/icono_boton_peq"
+                android:elevation="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:srcCompat="@drawable/favorito_off" />
+
+            <ImageView
+                android:id="@+id/icono_like"
+                android:layout_width="@dimen/icono_boton_peq"
+                android:layout_height="@dimen/icono_boton_peq"
+                android:elevation="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:srcCompat="@drawable/like_off" />
+
+            <TextView
+                android:id="@+id/cuantos_like"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="@dimen/padding0"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="@color/colorNegro" />
+
+            <ImageView
+                android:id="@+id/icono_coment"
+                android:layout_width="@dimen/icono_boton_peq"
+                android:layout_height="@dimen/icono_boton_peq"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:elevation="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:srcCompat="@drawable/message" />
+
+            <TextView
+                android:id="@+id/cuantos_coment"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="@dimen/padding0"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="@color/colorNegro" />
+
+
+            <TextView
+                android:id="@+id/sin_usar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11sdp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="@dimen/padding0"
+                android:text=""
+                android:textColor="@color/colorVerde">
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/info_rest"
+                style="@style/boton1"
+                android:textSize="@dimen/_11sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/padding2"
+                android:paddingTop="@dimen/padding0"
+                android:paddingBottom="@dimen/padding0"
+                android:paddingStart="@dimen/padding2"
+                android:paddingEnd="@dimen/padding2"
+                android:layout_weight="0"
+                android:text="@string/ver_mas_info">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding2"
+            android:background="@color/colorPrimaryDark"/>
+
+
+
+</LinearLayout>

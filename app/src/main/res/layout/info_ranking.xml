@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/pon_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding2"
+        android:text="@string/pon_ranking"
+        style="@style/boton1"
+        android:layout_gravity="center"
+        android:textSize="@dimen/texto_pequeno"
+        android:paddingStart="@dimen/padding2"
+        android:paddingEnd="@dimen/padding2">
+
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/contenedor_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

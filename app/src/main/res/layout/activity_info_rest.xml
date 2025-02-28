@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlanco">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/ctlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+
+                <TextView
+                    android:id="@+id/info_rest_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingStart="@dimen/padding2"
+                    android:paddingEnd="@dimen/icono_redondo"
+                    android:text="nombre restaurante"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="@dimen/texto_negrita"
+                    android:textStyle="bold"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/info_rest_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altura_imagen_restaurante"
+
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/info_rest_nombre"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/contenedor_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8sdp"
+
+                    app:cardCornerRadius="@dimen/icono_redondo_radio"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:id="@+id/logo_usuario"
+                        android:layout_width="@dimen/icono_redondo"
+                        android:layout_height="@dimen/icono_redondo"
+
+                        android:background="?selectableItemBackground"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageView
+                    android:id="@+id/pon_info"
+
+                    android:layout_width="@dimen/icono_boton_peq"
+                    android:layout_height="@dimen/icono_boton_peq"
+                    android:layout_marginStart="@dimen/padding2"
+                    android:layout_marginEnd="@dimen/padding2"
+                    app:srcCompat="@drawable/icon_info" />
+
+                <ImageView
+                    android:id="@+id/like"
+
+                    android:layout_width="@dimen/icono_boton_peq"
+                    android:layout_height="@dimen/icono_boton_peq"
+                    android:layout_marginEnd="@dimen/padding0"
+                    app:srcCompat="@drawable/like_off" />
+
+                <TextView
+                    android:id="@+id/cuantos_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/padding2"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="start"
+                    android:padding="@dimen/padding0"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorNegro" />
+
+                <ImageView
+                    android:id="@+id/pon_comentarios"
+                    android:layout_width="@dimen/icono_boton_peq"
+                    android:layout_height="@dimen/icono_boton_peq"
+                    android:layout_marginEnd="@dimen/padding0"
+                    app:srcCompat="@drawable/message" />
+
+                <TextView
+                    android:id="@+id/cuantos_coment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/padding2"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="start"
+                    android:padding="@dimen/padding0"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorNegro" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:id="@+id/contenedor_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_36sdp"
+    android:background="@color/colorBlanco"
+    android:layout_gravity="bottom"
+    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+    >
+
+    <TextView
+        android:id="@+id/no_comment"
+        style="@style/cajas_login"
+        android:padding="@dimen/padding2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/texto_normal"
+        android:layout_marginStart="@dimen/padding2"
+        android:layout_marginEnd="@dimen/padding2"
+
+        android:hint="@string/inicia_para_comentar"/>
+
+    <LinearLayout
+        android:id="@+id/caja_comentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/padding2"
+        android:layout_marginEnd="@dimen/padding2">
+
+        <EditText
+            android:id="@+id/el_comentario"
+            style="@style/cajas_login"
+            android:windowSoftInputMode="adjustPan"
+            android:padding="@dimen/padding2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/texto_normal"
+            android:overScrollMode="always"
+            android:maxLength="500"
+            android:maxLines="7"
+            android:layout_marginEnd="@dimen/padding2"
+            android:layout_weight="1"
+            android:hint="@string/escribe_comentario">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/cancela_respuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/padding0"
+            android:layout_marginEnd="@dimen/padding2"
+            android:layout_weight="0"
+            android:text="@string/cancelar"
+            android:textColor="#B60542"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enviar_comentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/padding0"
+            android:layout_weight="0"
+            android:text="@string/enviar"
+            android:textColor="#001273"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_8sdp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        >
+
+        <LinearLayout
+            android:id="@+id/info_llamar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:background="?selectableItemBackground"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="@dimen/icono_redondo_peq"
+                android:layout_height="@dimen/icono_redondo_peq"
+                app:srcCompat="@drawable/call"
+                app:tint="@color/colorBlanco" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/padding0"
+                android:textColor="@color/colorBlanco"
+                android:text="@string/llamar"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/info_ver_karta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorBlanco"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:text="@string/ver_karta"
+            />
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

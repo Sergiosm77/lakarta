@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding0"
+        app:cardCornerRadius="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/titulo_cambionivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        style="@style/texto_negrita"
+        android:elevation="3dp"
+        android:padding="5dp"
+        android:text="@string/modificar_categoria"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contenedor_cardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="@dimen/circulo_boton_edit_radio"
+                app:layout_constraintBottom_toBottomOf="@+id/imagen_nivel"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/cambia_imagen"
+                android:layout_width="@dimen/circulo_boton_edit"
+                android:layout_height="@dimen/circulo_boton_edit"
+                android:padding="5dp"
+                android:background="?selectableItemBackgroundBorderless"
+
+                app:srcCompat="@drawable/pencil"
+               />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ficha_sinimagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/imagen_nivel"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_sinimagen"
+                    style="@style/texto_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+
+                    android:text="@string/mostrar_imagen" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ficha_destacar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintBottom_toTopOf="@+id/ficha_sinimagen"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_destacar"
+                    style="@style/texto_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+
+                    android:text="@string/destacar" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/icono_no_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/padding3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imagen_nivel">
+
+                <ImageView
+
+                    android:layout_width="@dimen/alto_icono_plato"
+                    android:layout_height="@dimen/alto_icono_plato"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_5sdp"
+                    app:srcCompat="@drawable/no_see" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imagen_nivel"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/colorBlanco"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlanco"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding2"
+                app:layout_constraintTop_toBottomOf="@+id/imagen_nivel">
+
+
+                <LinearLayout
+                    android:id="@+id/ficha_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2">
+
+
+                    <ImageView
+
+                        android:id="@+id/icono_rest_o_usuario"
+                        style="@style/icono_pequeno"
+                        app:srcCompat="@drawable/plato_icono" />
+
+                    <TextView
+                        android:id="@+id/nombre_categoria"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:gravity="center_vertical"
+                        android:hint="@string/introduce_nombre"
+                        android:padding="@dimen/padding2" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/linea_tipo_comida"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro" />
+
+                <LinearLayout
+                    android:id="@+id/ficha_tipo_comida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2">
+
+                    <ImageView
+                        style="@style/icono_pequeno"
+                        app:srcCompat="@drawable/tipo_comida" />
+
+                    <TextView
+                        android:id="@+id/cantidad_platos"
+                        style="@style/texto_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/platos_elegir"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tipo_comida"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:gravity="center_vertical"
+                        android:hint="@string/introduce_tipo_comida"
+                        android:padding="@dimen/padding2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2">
+
+                    <ImageView
+
+                        style="@style/icono_pequeno"
+                        app:srcCompat="@drawable/icon_info" />
+
+                    <TextView
+                        android:id="@+id/detalle_categoria"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:gravity="center_vertical"
+                        android:hint="@string/introduce_detalle"
+                        android:padding="@dimen/padding2" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/linea_alergenos"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro" />
+
+
+                <LinearLayout
+                    android:id="@+id/ficha_alergenos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2"
+                    android:paddingTop="@dimen/padding2"
+                    android:paddingBottom="@dimen/padding2">
+
+
+                    <LinearLayout
+                        android:id="@+id/contenedor_alergenos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/padding2">
+
+                        <TextView
+                            android:id="@+id/texto_alergenos"
+                            style="@style/texto_normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorBlanco"
+                            android:gravity="center_vertical"
+                            android:hint="@string/introduce_alergenos" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/linea_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro" />
+
+                <LinearLayout
+                    android:id="@+id/ficha_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2">
+
+
+                    <ImageView
+
+                        android:id="@+id/icono_telefono_o_precio"
+                        style="@style/icono_pequeno"
+                        app:srcCompat="@drawable/euro" />
+
+                    <TextView
+                        android:id="@+id/precio_categoria"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:gravity="center_vertical"
+                        android:hint="@string/introduce_precio"
+                        android:maxLength="9"
+                        android:padding="@dimen/padding2" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/linea_agotado"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro" />
+
+                <LinearLayout
+                    android:id="@+id/ficha_agotado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2">
+
+
+                    <ImageView
+
+                        android:id="@+id/icono_agotado"
+                        style="@style/icono_pequeno"
+                        app:srcCompat="@drawable/agotado" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_agotado"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding2"
+
+                        android:text="@string/agotado" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/linea_esmenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro" />
+
+
+                <LinearLayout
+                    android:id="@+id/ficha_esmenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/padding2">
+
+
+                    <ImageView
+
+                        android:id="@+id/icono_esmenu"
+                        style="@style/icono_pequeno"
+                        app:srcCompat="@drawable/esmenu" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_esmenu"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding2"
+
+                        android:text="@string/es_menu" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/modificar"
+            style="@style/texto_botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:padding="10dp"
+            android:text="@string/guardar"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/elimina_nivel"
+            style="@style/texto_botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:padding="10dp"
+            android:text="@string/eliminar"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/nomodificar"
+            style="@style/texto_botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:padding="10dp"
+            android:text="@string/cancelar"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+        </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

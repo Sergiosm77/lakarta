@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/unidad_alergeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/checkBox_alergeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding2"
+            android:layout_weight="0"
+             />
+
+        <ImageView
+            android:id="@+id/imagen_alergeno"
+            android:layout_width="@dimen/icono_redondo_peq"
+            android:layout_height="@dimen/icono_redondo_peq"
+            android:layout_weight="0"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nombre_alergeno"
+            style="@style/texto_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding2"
+            android:layout_marginEnd="5dp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="nombre">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/detalle_alergeno"
+            style="@style/texto_pequeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding3"
+            android:layout_marginEnd="@dimen/padding2"
+            android:maxLines="3"
+            android:minLines="1"
+            android:text="detalles">
+
+        </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

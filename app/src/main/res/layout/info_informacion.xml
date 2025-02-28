@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/padding2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="@dimen/icono_redondo_peq"
+            android:layout_height="@dimen/icono_redondo_peq"
+            android:layout_weight="0"
+            android:src="@drawable/distance" />
+
+        <TextView
+            android:id="@+id/info_rest_distancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/texto_normal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="distancia"
+            android:textColor="@color/colorNegro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedor_llamada"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="@dimen/icono_redondo_peq"
+            android:layout_height="@dimen/icono_redondo_peq"
+            android:layout_weight="0"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/info_rest_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="000000000"
+            android:textColor="@color/colorNegro" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="@dimen/icono_redondo_peq"
+            android:layout_height="@dimen/icono_redondo_peq"
+            android:src="@drawable/tipo_comida" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/texto_normal"
+            android:text="@string/tipo_de_comida"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_tipo_comida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/texto_normal"
+        android:text="tipo"
+        android:textColor="@color/colorNegro" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="@dimen/icono_redondo_peq"
+            android:layout_height="@dimen/icono_redondo_peq"
+            android:src="@drawable/icon_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/texto_normal"
+            android:text="@string/info_empresa"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_rest_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/texto_normal"
+        android:text="detalle"
+        android:textColor="@color/colorNegro" />
+
+    <LinearLayout
+        android:id="@+id/caja_tags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="@dimen/icono_redondo_peq"
+            android:layout_height="@dimen/icono_redondo_peq"
+            android:src="@drawable/ic_search_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/texto_normal"
+            android:text="@string/los_tags_info"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_rest_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/texto_normal"
+        android:text="tags"
+        android:textColor="@color/colorNegro" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp">
+
+    </View>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        google()                // 💡 Asegúrate de que esté presente
+        mavenCentral()
+        gradlePluginPortal()   // 💡 Opcional, para plugins adicionales
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name='Lakarta2'
+include ':app'
+

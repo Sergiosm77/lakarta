@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/degradado_desde_arriba_blanco"
+        android:scaleType="centerCrop"
+        android:src="@drawable/categoria_icono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding2">
+
+            <ImageView
+                android:id="@+id/imagen_llave"
+                android:layout_width="@dimen/circulo_boton_edit"
+                android:layout_height="@dimen/circulo_boton_edit"
+                app:srcCompat="@drawable/key" />
+
+            <ProgressBar
+                android:id="@+id/barraprogreso_login"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/circulo_boton_edit"
+                android:layout_height="@dimen/circulo_boton_edit" />
+
+            <TextView
+                android:id="@+id/titulo_acceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding1"
+                android:text="@string/acceso_usuario"
+                android:textSize="@dimen/texto_negrita" />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding1"
+            android:layout_marginBottom="@dimen/padding0"
+            android:text="@string/usuario"
+            android:textColor="@color/colorNegro"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <EditText
+            android:id="@+id/usuario"
+            style="@style/cajas_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding1"
+            android:layout_marginEnd="@dimen/padding1"
+            android:layout_marginBottom="@dimen/padding2"
+            android:ems="10"
+            android:hint="@string/usuario"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/padding2"
+            android:textSize="@dimen/texto_normal" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding1"
+            android:layout_marginBottom="@dimen/padding0"
+            android:text="@string/contrasena"
+            android:textColor="@color/colorNegro"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <EditText
+            android:id="@+id/contra"
+            style="@style/cajas_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding1"
+            android:layout_marginEnd="@dimen/padding1"
+            android:layout_marginBottom="@dimen/padding2"
+            android:ems="10"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding2"
+            android:textSize="@dimen/texto_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/login_alerta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/padding0"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding2"
+                android:paddingBottom="@dimen/padding2"
+                android:textAlignment="center"
+                android:textColor="@color/colorNaranja"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/boton_acceso"
+            style="@style/boton1"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/aceptar" />
+
+        <TextView
+            android:id="@+id/nuevo_usuario"
+            android:background="?selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding1"
+            android:text="@string/nuevo_usuario"
+            android:textAlignment="center"
+            android:textColor="@color/colorVerde"
+            android:textSize="@dimen/texto_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pass_olvidado"
+            android:background="?selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding1"
+            android:text="@string/olvidado_contrasena"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/texto_normal"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/delete"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        >
+
+
+
+
+    </item>
+
+    <item android:drawable="@drawable/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+
+
+
+    </item>
+</selector>

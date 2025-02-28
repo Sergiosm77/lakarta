@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding2"
+    android:background="@drawable/redondo_tot"
+    android:backgroundTint="@color/colorBlanco"
+
+
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/icono_sindatos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/icon_info" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/infoSindatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/_11sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/salir_sindatos"
+        style="@style/boton1"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/colorNegro"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="@string/salir"/>
+</LinearLayout>
